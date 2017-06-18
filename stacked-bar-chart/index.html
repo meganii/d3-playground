@@ -20,7 +20,7 @@
         },
 
         xAxis: {
-            categories: ['Balance Sheets']
+            categories: ['Balance Sheets', 'Income Statement']
         },
 
         yAxis: {
@@ -51,19 +51,35 @@
 
         series: [{
             name: 'Assets',
-            data: [10],
-            stack: 'Creditor'
+            data: [10, null],
+            stack: 'Credit'
         }, {
             name: 'Liability Moved',
-            data: [7],
+            data: [7, null],
             stack: 'Debit'
         }, {
             name: 'Liability Fixed',
-            data: [1],
+            data: [1, null],
             stack: 'Debit'
         }, {
             name: 'Net Assets',
-            data: [2],
+            data: [2, null],
+            stack: 'Debit'
+        }, {
+            name: '営業原価',
+            data: [null, 5],
+            stack: 'Credit'
+        }, {
+            name: '販管費',
+            data: [null, 3],
+            stack: 'Credit'
+        }, {
+            name: '営業利益',
+            data: [null, 2],
+            stack: 'Credit'
+        }, {
+            name: '売上',
+            data: [null, 10],
             stack: 'Debit'
         }],
       });
